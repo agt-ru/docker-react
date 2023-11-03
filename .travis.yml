@@ -1,0 +1,6 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker built -t andreyterentyev/docker-react -f Dockerfile.dev .
